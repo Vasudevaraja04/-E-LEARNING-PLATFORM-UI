@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">E-Learning Platform</div>
+    <div class="container">
+        <h2>Available Courses</h2>
+        <div class="course-list">
+            <div class="course-card">
+                <h3>React Basics</h3>
+                <div class="progress-bar"><div class="progress react" style="width: 60%;"></div></div>
+                <button onclick="openCourse('https://www.youtube.com/embed/Ke90Tje7VS0')">View Course</button>
+            </div>
+            <div class="course-card">
+                <h3>Vue.js Fundamentals</h3>
+                <div class="progress-bar"><div class="progress vue" style="width: 30%;"></div></div>
+                <button onclick="openCourse('https://www.youtube.com/embed/FXpIoQ_rT_c')">View Course</button>
+            </div>
+            <div class="course-card">
+                <h3>Node.js Essentials</h3>
+                <div class="progress-bar"><div class="progress node" style="width: 80%;"></div></div>
+                <button onclick="openCourse('https://www.youtube.com/embed/TlB_eWDSMt4')">View Course</button>
+            </div>
+        </div>
+        <div id="course-viewer">
+            <h2>Course Video</h2>
+            <iframe id="course-frame" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
